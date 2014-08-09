@@ -17,9 +17,9 @@ import static org.junit.Assert.*;
  *
  * @author 12
  */
-public class CorrienteParaleloTest {
+public class CorrienteSerieTest {
     
-    public CorrienteParaleloTest() {
+    public CorrienteSerieTest() {
     }
     
     @BeforeClass
@@ -39,18 +39,18 @@ public class CorrienteParaleloTest {
     }
 
     /**
-     * Test of corrienteenparalelo method, of class CorrienteParalelo.
+     * Test of corrienteenserie method, of class CorrienteSerie.
      */
     @Test
-    public void testCorrienteenparalelo() {
-        System.out.println("corrienteenparalelo");
+    public void testCorrienteenserie() {
+        System.out.println("corrienteenserie");
         double r1 = 5.0;
         double r2 = 5.0;
         double r3 = 5.0;
         double voltaje = 10.0;
-        CorrienteParalelo instance = new CorrienteParalelo();
-        double expResult = 6.000000000000001;
-        double result = instance.corrienteenparalelo(r1, r2, r3, voltaje);
+        CorrienteSerie instance = new CorrienteSerie();
+        double expResult = 0.6666666666666666;
+        double result = instance.corrienteenserie(r1, r2, r3, voltaje);
         assertEquals(expResult, result, 0.0);
         // TODO review the generated test code and remove the default call to fail.
         //fail("The test case is a prototype.");

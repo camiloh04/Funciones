@@ -17,9 +17,9 @@ import static org.junit.Assert.*;
  *
  * @author 12
  */
-public class CorrienteParaleloTest {
+public class PitagorasTest {
     
-    public CorrienteParaleloTest() {
+    public PitagorasTest() {
     }
     
     @BeforeClass
@@ -39,18 +39,16 @@ public class CorrienteParaleloTest {
     }
 
     /**
-     * Test of corrienteenparalelo method, of class CorrienteParalelo.
+     * Test of pitagoras method, of class Pitagoras.
      */
     @Test
-    public void testCorrienteenparalelo() {
-        System.out.println("corrienteenparalelo");
-        double r1 = 5.0;
-        double r2 = 5.0;
-        double r3 = 5.0;
-        double voltaje = 10.0;
-        CorrienteParalelo instance = new CorrienteParalelo();
-        double expResult = 6.000000000000001;
-        double result = instance.corrienteenparalelo(r1, r2, r3, voltaje);
+    public void testPitagoras() {
+        System.out.println("pitagoras");
+        double catetoA = 10.0;
+        double catetoB = 10.0;
+        Pitagoras instance = new Pitagoras();
+        double expResult = 14.142135623730951;
+        double result = instance.pitagoras(catetoA, catetoB);
         assertEquals(expResult, result, 0.0);
         // TODO review the generated test code and remove the default call to fail.
         //fail("The test case is a prototype.");
